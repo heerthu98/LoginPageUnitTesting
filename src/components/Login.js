@@ -31,7 +31,7 @@ function Login() {
 
             <label>Remember Me</label>
           </div>
-          <a href="#">Forgot Password? </a>
+          <a href="/forgot-password">Forgot Password? </a>
         </div>
 
         <button className="login__btn">Login</button>
