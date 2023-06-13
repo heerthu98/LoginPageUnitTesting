@@ -1,13 +1,96 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    + monospace;
+}
+
+/* Login CSS */
+.login__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.849);
+  background-color: rgba(113, 167, 177, 255);
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(66, 156, 167, 255);
+  padding: 30px 20px;
+}
+.Login__profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  background-color: #00264d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  margin-top: -27%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login__form > input {
+  min-width: 300px;
+  padding: 15px 0px 15px 15px;
+  margin-bottom: 15px;
+  outline: none;
+  border: none;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.736);
+  border-radius: 3px;
+  font-size: 16px;
+  background-color: transparent;
+  caret-color: rgba(255, 255, 255, 0.736);
+}
+
+.login__form > input::placeholder {
+  color: rgba(255, 255, 255, 0.849);
+}
+.login__btn {
+  min-width: 200px;
+  padding: 17px 30px;
+  background: #00264d;
+  border: none;
+  color: rgba(255, 255, 255, 0.849);
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.login__forgotPwd {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 25px;
+}
+.login__forgotPwd > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.849);
+}
+
+/* Logout CSS */
+.welcome__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.849);
+  background-color: rgba(113, 167, 177, 255);
 }
