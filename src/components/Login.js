@@ -1,14 +1,29 @@
 import React, { useState } from "react";
-
+import { useDispatch } from "react-redux";
 import { BsFillPersonFill } from "react-icons/bs";
+import { login } from "../features/userSlice";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const dispatch = useDispatch();
+
+  function handleLogin(e) {
+    e.preventDefault();
+
+    dispatch(
+      login({
+        email: email,
+        password: password,
+        loggedIn: true,
+      })
+    );
+  }
+
   return (
     <div className="login__container container">
-      <form className="login__form">
+      <form className="login__form" onSubmit={(e) => handleLogin(e)}>
         <div className="Login__profile">
           <BsFillPersonFill size={90} />
         </div>
