@@ -49,7 +49,9 @@ function Login() {
           <a href="/forgot-password">Forgot Password? </a>
         </div>
 
-        <button className="login__btn">Login</button>
+        <button data-testid="submit" className="login__btn">
+          Login
+        </button>
       </form>
     </div>
   );

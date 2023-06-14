@@ -14,7 +14,7 @@ function Welcome() {
   return (
     <div className="welcome__container">
       <h1>
-        Welcome <span className="welcome__userName">{user.email}</span>
+        Welcome <span className="welcome__userName">{user?.email}</span>
       </h1>
       <button className="login__btn" onClick={handleLogout}>
         Logout
