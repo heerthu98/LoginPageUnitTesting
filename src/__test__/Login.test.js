@@ -2,7 +2,6 @@ import { render as rt1Render, screen } from "@testing-library/react";
 import { Provider } from "react-redux";
 import store from "../App/store";
 import Login from "../components/Login";
-import userEvent from "@testing-library/user-event";
 
 const render = (component) =>
   rt1Render(<Provider store={store}>{component}</Provider>);
