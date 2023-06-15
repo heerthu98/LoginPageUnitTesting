@@ -28,6 +28,7 @@ code {
 
 .login__form {
   display: flex;
+  max-width: 350px;
   flex-direction: column;
   justify-content: center;
   background-color: rgba(66, 156, 167, 255);
@@ -98,4 +99,38 @@ code {
 }
 .welcome__userName {
   color: rgb(8, 24, 50);
+}
+
+/* Mobile Responsive */
+@media only screen and (max-width: 767px) {
+  .login__container,
+  .welcome__container {
+    height: auto;
+    padding: 20px;
+  }
+
+  .Login__profile {
+    margin-top: -15%;
+  }
+
+  .login__form > input {
+    min-width: auto;
+  }
+
+  .login__btn {
+    min-width: auto;
+  }
+}
+
+/* Tablet Responsive */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .Login__profile {
+    margin-top: -20%;
+  }
+}
+
+.error {
+  color: rgb(185, 27, 27);
+  font-size: 14px;
+  margin-top: 0px;
 }
