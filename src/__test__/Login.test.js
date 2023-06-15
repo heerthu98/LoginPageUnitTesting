@@ -1,9 +1,4 @@
-import {
-  render as rt1Render,
-  screen,
-  fireEvent,
-  act,
-} from "@testing-library/react";
+import { render as rt1Render, screen, fireEvent } from "@testing-library/react";
 import { Provider } from "react-redux";
 import store from "../App/store";
 import Login from "../components/Login";
